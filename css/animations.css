@@ -1,0 +1,301 @@
+/* 
+ * アニメーションスタイルシート
+ * サポートOne ランディングページ
+ */
+
+/* フェードイン */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+/* 下からフェードイン */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* 左からフェードイン */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-left {
+  animation: fadeInLeft 0.8s ease forwards;
+}
+
+/* 右からフェードイン */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-right {
+  animation: fadeInRight 0.8s ease forwards;
+}
+
+/* ズームイン */
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.zoom-in {
+  animation: zoomIn 0.8s ease forwards;
+}
+
+/* パルス（脈動）アニメーション */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* シェイク（揺れる）アニメーション */
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px);
+  }
+}
+
+.shake {
+  animation: shake 0.8s ease;
+}
+
+/* フロート（浮遊）アニメーション */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* 回転アニメーション */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate 10s linear infinite;
+}
+
+/* ボタンホバーエフェクト */
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* サービスアイコンホバーエフェクト */
+.service__icon img,
+.support__icon img {
+  transition: transform 0.3s ease;
+}
+
+.service__item:hover .service__icon img,
+.support__item:hover .support__icon img {
+  transform: scale(1.1);
+}
+
+/* ヒーローセクションのアニメーション */
+.hero__subtitle {
+  animation: fadeInLeft 0.8s ease 0.2s forwards;
+  opacity: 0;
+}
+
+.hero__service-name {
+  animation: pulse 2s infinite;
+}
+
+.hero__tagline {
+  animation: fadeInRight 0.8s ease 0.4s forwards;
+  opacity: 0;
+}
+
+.hero .btn {
+  animation: fadeInUp 0.8s ease 0.6s forwards;
+  opacity: 0;
+}
+
+/* スクロールアニメーション用クラス */
+.scroll-animation {
+  opacity: 0;
+}
+
+.scroll-animation.animated {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* セクションタイトルのアニメーション */
+.section-title {
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background-color: var(--color-primary);
+  transition: width 0.8s ease, left 0.8s ease;
+}
+
+.section-title.animated::after {
+  width: 60px;
+  left: calc(50% - 30px);
+}
+
+/* 料金プランのホバーエフェクト */
+.price__plan {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.price__plan:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* お問い合わせフォームのアニメーション */
+.form__input,
+.form__textarea {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form__input:focus,
+.form__textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(255, 126, 0, 0.2);
+}
+
+/* アニメーション遅延クラス */
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}
+
+.delay-400 {
+  animation-delay: 0.4s;
+}
+
+.delay-500 {
+  animation-delay: 0.5s;
+}
+
+/* スクロールアニメーションのJavaScript */
+document.addEventListener('DOMContentLoaded', function() {
+  // スクロールアニメーション要素を取得
+  const scrollElements = document.querySelectorAll('.scroll-animation');
+  const sectionTitles = document.querySelectorAll('.section-title');
+  
+  // 要素が画面内に入ったかどうかをチェックする関数
+  const elementInView = (el, offset = 0) => {
+    const elementTop = el.getBoundingClientRect().top;
+    return (
+      elementTop <= 
+      (window.innerHeight || document.documentElement.clientHeight) * (1 - offset)
+    );
+  };
+  
+  // 要素をアニメーションさせる関数
+  const displayScrollElement = (element) => {
+    element.classList.add('animated');
+  };
+  
+  // スクロール時のハンドラー
+  const handleScrollAnimation = () => {
+    scrollElements.forEach((el) => {
+      if (elementInView(el, 0.25)) {
+        displayScrollElement(el);
+      }
+    });
+    
+    sectionTitles.forEach((el) => {
+      if (elementInView(el, 0.25)) {
+        el.classList.add('animated');
+      }
+    });
+  };
+  
+  // スクロールイベントリスナーを追加
+  window.addEventListener('scroll', () => {
+    handleScrollAnimation();
+  });
+  
+  // 初期表示時にもチェック
+  handleScrollAnimation();
+});

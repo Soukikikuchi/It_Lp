@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サポートOne | Quickmanのプレミアムサポート</title>
+    <meta name="description" content="Quickmanのプレミアムサポート「サポートOne」。中小企業向けIT保守・サポートサービス。パソコン修理、データ復旧、システム構築、セキュリティ対策まで、すべてお任せください。コスト削減と業務効率化を実現します。">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/svg-animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container">
+            <div class="header__logo">
+                <img src="images/logo.svg" alt="Quickman" class="logo">
+            </div>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#service">サービス内容</a></li>
+                    <li class="nav__item"><a href="#support">サポート内容</a></li>
+                    <li class="nav__item"><a href="#security">セキュリティ対策</a></li>
+                    <li class="nav__item"><a href="#price">料金プラン</a></li>
+                    <li class="nav__item"><a href="#contact" class="btn btn--contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <button class="header__menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    <span class="hero__subtitle">対応力No1</span>
+                    中小企業のIT環境を守る
+                    <span class="hero__service-name">サポートOne</span>
+                </h1>
+                <p class="hero__tagline">コスト削減と業務効率化を実現！すべてお任せください!!</p>
+                <a href="#contact" class="btn btn--primary btn--large">お問い合わせはこちら</a>
+            </div>
+            <div class="hero__image">
+                <!-- アイソメトリックイラストが入ります -->
+                <div class="isometric-illustration scroll-animation" id="hero-illustration">
+                    <!-- SVGイラストはJavaScriptで挿入されます -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 問題提起セクション -->
+    <section class="problem" id="problem">
+        <div class="container">
+            <h2 class="section-title">絶対必要！企業のセキュリティ対策!!</h2>
+            <p class="section-description">企業や組織にとってサイバーセキュリティ対策は必須です。十分な対策をとっていないと、思わぬアクシデントで企業に大きな損害をもたらす事態になります。</p>
+            
+            <div class="problem__illustration">
+                <!-- アイソメトリックイラストが入ります -->
+                <div class="isometric-illustration" id="problem-illustration">
+                    <!-- SVGイラストが入ります -->
+                </div>
+            </div>
+            
+            <div class="problem__list">
+                <div class="problem__item">
+                    <div class="problem__icon">
+                        <img src="images/icon-security-risk.svg" alt="セキュリティリスク">
+                    </div>
+                    <h3 class="problem__title">セキュリティリスク</h3>
+                    <p class="problem__description">サイバー攻撃によるデータ漏洩や情報流出のリスクがあります。</p>
+                </div>
+                <div class="problem__item">
+                    <div class="problem__icon">
+                        <img src="images/icon-system-trouble.svg" alt="システムトラブル">
+                    </div>
+                    <h3 class="problem__title">システムトラブル</h3>
+                    <p class="problem__description">予期せぬシステム障害やハードウェア故障が業務を停止させます。</p>
+                </div>
+                <div class="problem__item">
+                    <div class="problem__icon">
+                        <img src="images/icon-operation-burden.svg" alt="運用負担">
+                    </div>
+                    <h3 class="problem__title">運用負担</h3>
+                    <p class="problem__description">IT環境の維持管理に多くの時間とコストがかかります。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- サービス概要セクション -->
+    <section class="service" id="service">
+        <div class="container">
+            <h2 class="section-title">サービス内容</h2>
+            <p class="section-description">Quickmanのプレミアムサポート「サポートOne」は、IT関連のあらゆるお悩みを解決します。</p>
+            
+            <div class="service__grid">
+                <div class="service__item">
+                    <div class="service__icon">
+                        <img src="images/icon-pc-repair.svg" alt="パソコン修理">
+                    </div>
+                    <h3 class="service__title">パソコン修理</h3>
+                    <p class="service__description">故障したパソコンの修理や部品交換を行います。</p>
+                </div>
+                <div class="service__item">
+                    <div class="service__icon">
+                        <img src="images/icon-data-recovery.svg" alt="データ復旧">
+                    </div>
+                    <h3 class="service__title">データ復旧</h3>
+                    <p class="service__description">消失したデータの復旧作業を行います。</p>
+                </div>
+                <div class="service__item">
+                    <div class="service__icon">
+                        <img src="images/icon-oa-equipment.svg" alt="OA機器販売">
+                    </div>
+                    <h3 class="service__title">OA機器販売</h3>
+                    <p class="service__description">オフィスに必要なIT機器の販売を行います。</p>
+                </div>
+                <div class="service__item">
+                    <div class="service__icon">
+                        <img src="images/icon-system-construction.svg" alt="システム構築">
+                    </div>
+                    <h3 class="service__title">システム構築</h3>
+                    <p class="service__description">お客様のニーズに合わせたシステム環境を構築します。</p>
+                </div>
+                <div class="service__item">
+                    <div class="service__icon">
+                        <img src="images/icon-maintenance.svg" alt="保守サポート">
+                    </div>
+                    <h3 class="service__title">保守サポート</h3>
+                    <p class="service__description">システムの安定稼働を維持するための保守サービスを提供します。</p>
+                </div>
+                <div class="service__item">
+                    <div class="service__icon">
+                        <img src="images/icon-server.svg" alt="サーバー構築">
+                    </div>
+                    <h3 class="service__title">サーバー構築</h3>
+                    <p class="service__description">サーバー環境の設計から構築、運用までサポートします。</p>
+                </div>
+                <div class="service__item">
+                    <div class="service__icon">
+                        <img src="images/icon-software.svg" alt="ソフトウェア開発">
+                    </div>
+                    <h3 class="service__title">ソフトウェア開発</h3>
+                    <p class="service__description">業務効率化のためのソフトウェア開発を行います。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- サポート内容セクション -->
+    <section class="support" id="support">
+        <div class="container">
+            <h2 class="section-title">充実のサポート内容</h2>
+            <p class="section-description">IT担当者の負担を軽減し、経営者様の業務効率化をサポートします。お客様のIT環境を万全にサポートするための充実したサービスをご用意しています。</p>
+            
+            <div class="support__grid">
+                <div class="support__item">
+                    <div class="support__icon">
+                        <img src="images/icon-phone-support.svg" alt="電話サポート">
+                    </div>
+                    <h3 class="support__title">電話サポート</h3>
+                    <p class="support__description">お困りごとがあれば電話で気軽にご相談いただけます。サポートスタッフが親切に対応いたします。</p>
+                </div>
+                <div class="support__item">
+                    <div class="support__icon">
+                        <img src="images/icon-visit-support.svg" alt="定期訪問サポート">
+                    </div>
+                    <h3 class="support__title">定期訪問サポート</h3>
+                    <p class="support__description">定期的にご訪問してパソコンや機器の状況をチェックいたします。</p>
+                </div>
+                <div class="support__item">
+                    <div class="support__icon">
+                        <img src="images/icon-remote-support.svg" alt="リモートサポート">
+                    </div>
+                    <h3 class="support__title">リモートサポート</h3>
+                    <p class="support__description">リモートアクセスでお客様のパソコンの状況を確認し、素早く問題を解決いたします。</p>
+                </div>
+                <div class="support__item">
+                    <div class="support__icon">
+                        <img src="images/icon-pc-security.svg" alt="PCセキュリティ">
+                    </div>
+                    <h3 class="support__title">PCセキュリティ</h3>
+                    <p class="support__description">ウイルス対策ソフトの導入・管理を行い、安全なPC環境を維持します。</p>
+                </div>
+                <div class="support__item">
+                    <div class="support__icon">
+                        <img src="images/icon-onsite-support.svg" alt="出張サポート">
+                    </div>
+                    <h3 class="support__title">出張サポート</h3>
+                    <p class="support__description">お客様のオフィスに訪問し、現地でのトラブル対応を行います。</p>
+                </div>
+                <div class="support__item">
+                    <div class="support__icon">
+                        <img src="images/icon-network-security.svg" alt="ネットワークセキュリティ">
+                    </div>
+                    <h3 class="support__title">ネットワークセキュリティ</h3>
+                    <p class="support__description">UTM導入によるネットワークセキュリティ対策を提供します。</p>
+                </div>
+            </div>
+            
+            <div class="support__illustration">
+                <!-- アイソメトリックイラストが入ります -->
+                <div class="isometric-illustration scroll-animation" id="support-illustration">
+                    <!-- SVGイラストはJavaScriptで挿入されます -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- セキュリティ対策セクション -->
+    <section class="security" id="security">
+        <div class="container">
+            <h2 class="section-title">サイバー攻撃から企業を守るセキュリティ対策</h2>
+            <p class="section-description">情報漏洩リスクを低減し、事業継続性を確保します。お客様に最適なプランでご提案いたします！</p>
+            
+            <div class="security__solutions">
+                <div class="security__solution">
+                    <div class="security__solution-image">
+                        <img src="images/withsecure.svg" alt="WithSecure">
+                    </div>
+                    <h3 class="security__solution-title">WithSecure</h3>
+                    <p class="security__solution-description">世界品質の評判・信頼あるアンチウイルスソフトウェア</p>
+                    <ul class="security__solution-features">
+                        <li>パソコンのセキュリティ対策と脅威の早期発見</li>
+                        <li>高度なインシデント検知や脆弱性管理</li>
+                        <li>脆弱性アップデートと管理機能の実行</li>
+                        <li>サーバー保護のシステム監視</li>
+                    </ul>
+                </div>
+                <div class="security__solution">
+                    <div class="security__solution-image">
+                        <img src="images/utm-router.svg" alt="UTM機能対応ルーター">
+                    </div>
+                    <h3 class="security__solution-title">UTM機能対応ルーター</h3>
+                    <p class="security__solution-description">100台以上までの複数台のパソコンやサーバーの同時保護に最適！</p>
+                    <ul class="security__solution-features">
+                        <li>ネットワーク経由のウイルスやマルウェアの侵入を防ぐ</li>
+                        <li>フィッシングサイトを遮断&URL・アプリケーションフィルタリング</li>
+                        <li>迷惑メールやスパムメール遮断</li>
+                        <li>外部からの不正アクセス防止、監視</li>
+                        <li>危険なアプリケーションの使用を制限</li>
+                        <li>危険なサイトへの接続を制限</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="security__illustration">
+                <!-- アイソメトリックイラストが入ります -->
+                <div class="isometric-illustration scroll-animation" id="security-illustration">
+                    <!-- SVGイラストはJavaScriptで挿入されます -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 料金プランセクション -->
+    <section class="price" id="price">
+        <div class="container">
+            <h2 class="section-title">サービス価格</h2>
+            <p class="section-description">コストパフォーマンスに優れた料金体系で、IT投資の最適化を実現します。お客様のニーズに合わせた最適なプランをご用意しています。</p>
+            
+            <div class="price__plans">
+                <div class="price__plan">
+                    <div class="price__plan-header">
+                        <h3 class="price__plan-title">パーソナルプラン</h3>
+                        <p class="price__plan-description">個人ユーザー向けのサポートプラン。個人の方も安心してお使いいただけます！</p>
+                    </div>
+                    <div class="price__plan-price">
+                        <span class="price__plan-label">基本月額料金</span>
+                        <span class="price__plan-amount">980円〜</span>
+                    </div>
+                    <ul class="price__plan-features">
+                        <li>電話サポート</li>
+                        <li>リモートサポート</li>
+                        <li>出張サポート</li>
+                    </ul>
+                    <a href="#contact" class="btn btn--secondary">お問い合わせ</a>
+                </div>
+                
+                <div class="price__plan price__plan--featured">
+                    <div class="price__plan-header">
+                        <h3 class="price__plan-title">ビジネスプラン</h3>
+                        <p class="price__plan-description">法人ユーザー向けのサポートプラン。セキュリティもしっかり対策！</p>
+                    </div>
+                    <div class="price__plan-price">
+                        <span class="price__plan-label">基本月額料金</span>
+                        <span class="price__plan-amount">1,980円〜</span>
+                    </div>
+                    <div class="price__plan-price price__plan-price--sub">
+                        <span class="price__plan-label">PC1台につき</span>
+                        <span class="price__plan-amount">480円〜</span>
+                    </div>
+                    <ul class="price__plan-features">
+                        <li>電話サポート</li>
+                        <li>リモートサポート</li>
+                        <li>出張サポート</li>
+                        <li>定期訪問サポート</li>
+                        <li>PCセキュリティ</li>
+                    </ul>
+                    <a href="#contact" class="btn btn--primary">お問い合わせ</a>
+                </div>
+                
+                <div class="price__plan price__plan--premium">
+                    <div class="price__plan-header">
+                        <h3 class="price__plan-title">ビジネスプランプレミアム</h3>
+                        <p class="price__plan-description">社内ネットワークを保護するUTM導入も含む、企業を守るための完全サポートプランです。</p>
+                    </div>
+                    <div class="price__plan-price">
+                        <span class="price__plan-label">基本月額料金</span>
+                        <span class="price__plan-amount">6,980円〜</span>
+                    </div>
+                    <div class="price__plan-price price__plan-price--sub">
+                        <span class="price__plan-label">PC1台につき</span>
+                        <span class="price__plan-amount">480円〜</span>
+                    </div>
+                    <ul class="price__plan-features">
+                        <li>電話サポート</li>
+                        <li>リモートサポート</li>
+                        <li>出張サポート</li>
+                        <li>定期訪問サポート</li>
+                        <li>PCセキュリティ</li>
+                        <li>ネットワークセキュリティ</li>
+                    </ul>
+                    <a href="#contact" class="btn btn--premium">お問い合わせ</a>
+                </div>
+            </div>
+            
+            <div class="price__illustration">
+                <!-- アイソメトリックイラストが入ります -->
+                <div class="isometric-illus<response clipped><NOTE>To save on context only part of this file has been shown to you. You should retry this tool after you have searched inside the file with `grep -n` in order to find the line numbers of what you are looking for.</NOTE>"></div>
+            </div>
+        </div>
+    </section>
+
+                

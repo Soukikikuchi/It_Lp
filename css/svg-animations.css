@@ -1,0 +1,229 @@
+/* 
+ * SVG要素のアニメーションスタイル
+ * サポートOne ランディングページ
+ */
+
+/* SVGコンテナのスタイル */
+.isometric-illustration {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.isometric-illustration::after {
+  content: none;
+}
+
+.hero-svg,
+.security-svg,
+.support-svg,
+.price-svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* ヒーローセクションのアニメーション */
+@keyframes megaphonePulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes messageFloat {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(-15px) rotate(5deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.7;
+  }
+}
+
+#hero-illustration.animated {
+  animation: fadeIn 1s ease forwards;
+}
+
+#hero-illustration .pulse {
+  animation: megaphonePulse 2s infinite;
+  transform-origin: center;
+}
+
+#hero-illustration .float {
+  animation: messageFloat 3s ease-in-out infinite;
+}
+
+/* セキュリティセクションのアニメーション */
+@keyframes shieldPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+@keyframes dataPacketFloat {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes hackerMove {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#security-illustration .pulse {
+  animation: shieldPulse 3s infinite;
+  transform-origin: center;
+}
+
+#security-illustration .float {
+  animation: dataPacketFloat 4s ease-in-out infinite;
+}
+
+#security-illustration #hacker {
+  animation: hackerMove 5s ease-in-out infinite;
+}
+
+/* サポートセクションのアニメーション */
+@keyframes supportPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes connectionBlink {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+#support-illustration #support-icons {
+  animation: supportPulse 3s infinite;
+}
+
+#support-illustration #connection-line {
+  animation: connectionBlink 2s infinite;
+}
+
+/* 料金プランセクションのアニメーション */
+@keyframes planHover {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes coinSpin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+#price-illustration #business-plan {
+  animation: planHover 4s ease-in-out infinite;
+}
+
+#price-illustration #coins {
+  animation: coinSpin 5s linear infinite;
+}
+
+/* スクロールアニメーション */
+.scroll-animation {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-animation.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 遅延アニメーション */
+.delay-100 {
+  transition-delay: 0.1s;
+}
+
+.delay-200 {
+  transition-delay: 0.2s;
+}
+
+.delay-300 {
+  transition-delay: 0.3s;
+}
+
+.delay-400 {
+  transition-delay: 0.4s;
+}
+
+.delay-500 {
+  transition-delay: 0.5s;
+}
+
+/* ホバーエフェクト */
+.service__item:hover .isometric-illustration,
+.support__item:hover .isometric-illustration,
+.price__plan:hover .isometric-illustration {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+/* モバイル対応 */
+@media (max-width: 768px) {
+  .isometric-illustration {
+    max-height: 300px;
+  }
+}
