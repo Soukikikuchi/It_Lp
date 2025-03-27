@@ -651,7 +651,7 @@ section {
 
 .testimonial__text::before,
 .testimonial__text::after {
-  content: """;
+  content: "";
   font-size: var(--font-size-3xl);
   color: var(--color-primary);
   position: absolute;
@@ -664,7 +664,7 @@ section {
 }
 
 .testimonial__text::after {
-  content: """;
+  content: "";
   right: -5px;
   bottom: -10px;
 }
