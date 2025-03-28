@@ -315,7 +315,7 @@ section {
 
 .problem__list {
   display: grid;
-  grid-template-columns: 3fr;
+  grid-template-columns: 1fr;
   gap: var(--spacing-lg);
 }
 
@@ -833,7 +833,7 @@ section {
 @media (min-width: 576px) {
   .problem__list,
   .service__grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
