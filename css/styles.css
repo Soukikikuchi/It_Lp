@@ -415,6 +415,11 @@ section {
   text-align: center;
 }
 
+.support__illustration{
+  max-width: 30%;
+  height: auto;
+}
+
 /* セキュリティ対策セクション */
 .security__solutions {
   display: grid;
